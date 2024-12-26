@@ -1,0 +1,15 @@
+{
+  "name": "ordinal-testing-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "An example application showing how to write tests using the jest framework",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
