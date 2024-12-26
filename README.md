@@ -39,7 +39,7 @@ This will open an interactive menu where you can choose options such as:
 
 
 
-```markdown
+
 ---
 
 
@@ -49,7 +49,5 @@ Watch mode will allow you to instantly see changes and re-run tests as you modif
 You can easily go back to run a specific file or group of tests without having to stop and start the tests manually.
 
 
-```markdown
 ---
-
 
