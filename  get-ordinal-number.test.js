@@ -1,4 +1,8 @@
 function getOrdinalNumber(num) {
+  if (typeof num !== "number" || !Number.isInteger(num)) {
+    throw new Error("Input must be an integer.");
+  }
+
   const suffixes = ["th", "st", "nd", "rd"];
   const v = num % 100;
   return num + (suffixes[(v - 20) % 10] || suffixes[v] || suffixes[0]);
@@ -13,17 +17,13 @@ test("convert numbers to ordinal numbers", () => {
   expect(getOrdinalNumber(21)).toEqual("21st");
 });
 
-
 test("convert numbers to ordinal numbers", () => {
   expect(getOrdinalNumber(22)).toEqual("22nd");
   expect(getOrdinalNumber(23)).toEqual("23rd");
   expect(getOrdinalNumber(101)).toEqual("101st");
 });
 
-
-
 // ============================= function isEven ===============================
-
 
 // function isEven(n) {
 //   return n % 2 === 0;
@@ -42,8 +42,7 @@ test("convert numbers to ordinal numbers", () => {
 // });
 
 // // module.exports = isEven;
-// //example on how have to be the files in diferente file 
-
+// //example on how have to be the files in diferente file
 
 // // src/
 // //   getOrdinalNumber.js
