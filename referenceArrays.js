@@ -16,6 +16,12 @@ console.log(copy);
 // This way, when we push new values to the copy, it does not 
 // affect the original list because they are different arrays in memory.
 
+
+// and this is called immutability, when we want to create a new
+//  array with the same elements but we don't want to change the 
+//  original array, we can use the spread operator to create a 
+//  new array that is a copy of the original array. This way, we 
+//  can modify the new array without affecting the original array.
 const list2 = [10, 20, 30];
 const copy2 = [...list]; // the three dots create a new array with the same elements as list
 
