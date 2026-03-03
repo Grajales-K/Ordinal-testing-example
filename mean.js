@@ -28,8 +28,18 @@ function calculateMean(list) {
     for (const item of list) {
         total += item;
     }
-    return total / list.length;
+
+    // console.log(total) to check the total value but we need 
+    // to round the number if not will be a float number, 
+    // e.g The mean salary is 45.714285714285715
+    return Math.round(total / list.length);
 }
+
+// testing case 2 
+// for this we need the mathod Math.round() 
+// const salaries = [10, 20, 30, 40, 60, 80, 80];
+// const mean = calculateMean(salaries);
+// console.log(`The mean salary is ${mean}`);
 
 // calculateMean([1, 40, 15]);
 
